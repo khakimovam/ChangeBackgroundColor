@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Смена фона</title>
+</head>
+
+<body>
+    <select name="color" id="color" onchange="changeColor()">
+        <option value="red">Красный</option>
+        <option value="orange">Оранжевый</option>
+        <option value="yellow">Желтый</option>
+        <option value="green">Зеленый</option>
+        <option value="lightblue">Голубой</option>
+    </select>
+    <div id="result"></div>
+
+    <script>
+        function changeColor() {
+            switch (document.getElementById("color").value) {
+                case "red":
+                    document.body.style.background = 'red';
+                    break;
+                case "orange":
+                    document.body.style.background = 'orange';
+                    break;
+                case "yellow":
+                    document.body.style.background = 'yellow';
+                    break;
+                case "green":
+                    document.body.style.background = 'green';
+                    break;
+                case "lightblue":
+                    document.body.style.background = 'lightblue';
+                    break;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
